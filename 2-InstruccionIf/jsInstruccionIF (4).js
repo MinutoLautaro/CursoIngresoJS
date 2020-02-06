@@ -1,10 +1,10 @@
 function mostrar()
 {
 //tomo la edad  
-    var edad 
-    var condicionUno
-    var condicionDos
-    var adolescente
+    var edad;
+    var condicionUno;
+    var condicionDos;
+    var adolescente;
 
     edad = document.getElementById("edad").value;
     condicionUno = edad >= 13
