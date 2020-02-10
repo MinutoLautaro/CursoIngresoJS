@@ -18,6 +18,4 @@ function mostrarAumento()
     total = resultado + total
     
     document.getElementById("resultado").value = total
-
-	
 }
