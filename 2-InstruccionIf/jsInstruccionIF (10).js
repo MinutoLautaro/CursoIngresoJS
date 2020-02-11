@@ -7,7 +7,16 @@ function mostrar()
 	
 	if(numero > 8)
 	{
-		alert("Exelente " + numero)
+		alert("Exelente " + numero);
+	}
+
+	else if(numero < 4)
+	{
+		alert("Vamos si se puede " + numero);
 	}
 	
+	else
+	{
+		alert("aprobo " + numero);
+	}
 }//FIN DE LA FUNCIÓN

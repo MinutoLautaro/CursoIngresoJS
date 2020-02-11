@@ -11,30 +11,22 @@ function Rectangulo ()
 {
     largo = document.getElementById("Largo").value;
     ancho = document.getElementById("Ancho").value;
-    radio = document.getElementById("Radio").value;
 
     largo = parseInt(largo);
     ancho = parseInt(ancho);
-    radio = parseInt(radio);
     
     resultado = (largo + ancho) * 3;
-
 
     console.log(resultado);
 }
 function Circulo () 
 {
-	largo = document.getElementById("Largo").value;
-    ancho = document.getElementById("Ancho").value;
     radio = document.getElementById("Radio").value;
 
-    largo = parseInt(largo);
-    ancho = parseInt(ancho);
     radio = parseInt(radio);
     
     resultado = radio * Math.PI;
     resulado = resultado * 3
-
 
     console.log(resultado);
 }
@@ -42,14 +34,11 @@ function Materiales ()
 {
 	largo = document.getElementById("Largo").value;
     ancho = document.getElementById("Ancho").value;
-    radio = document.getElementById("Radio").value;
-
+    
     largo = parseInt(largo);
     ancho = parseInt(ancho);
-    radio = parseInt(radio);
     
     resultado = (largo + ancho) * 3;
-
 
     console.log(resultado);
 }
