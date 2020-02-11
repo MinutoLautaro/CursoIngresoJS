@@ -2,6 +2,28 @@ function mostrar()
 {
 //tomo la edad  
     var edad;
+    
+
+    edad = document.getElementById("edad").value;
+    
+    if(edad >= 13 && edad <= 17){
+    
+    alert("Usted es adolescente")
+    }
+    else if(edad < 13)
+    {
+        alert("Usted es un niño");
+    }
+    else
+    {
+    alert("Usted es mayor de edad");
+    }
+    
+
+
+
+}//FIN DE LA FUNCIÓN
+/* var edad;
     var condicionUno;
     var condicionDos;
     var adolescente;
@@ -15,10 +37,10 @@ function mostrar()
     mayor = edad > 17;
     adolescente = condicionUno && condicionDos;
 
-    if(adolescente)
+    if(adolescente){
     
     alert("Usted es adolescente")
-    
+    }
     else if(menor)
     {
         alert("Usted es un niño");
@@ -27,8 +49,5 @@ function mostrar()
     {
     alert("Usted es mayor de edad");
     }
+    */
     
-
-
-
-}//FIN DE LA FUNCIÓN
