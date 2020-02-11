@@ -38,7 +38,7 @@ function Materiales ()
     largo = parseInt(largo);
     ancho = parseInt(ancho);
     
-    resultado = (largo + ancho) * 3;
+    resultado = (largo Math.pow(2));
 
     console.log(resultado);
 }
