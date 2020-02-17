@@ -8,8 +8,13 @@ switch(mesDelAño){
      case"Agosto":
         alert("abrigate");
         break;
-     case"Enero":
-     case"Febrero":
-     case"Marzo":
+     case"Octubre":
+     case"Septiembre":
+     case"Noviembre":
+     case"Diciembre":
+        alert("Ya pasamos el frio, ahora calor!!!.");
+        break;
+      default:
+         alert("Falta para el invierno.")
     }
 }//FIN DE LA FUNCIÓN

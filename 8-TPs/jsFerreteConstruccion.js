@@ -32,13 +32,17 @@ function Circulo ()
 }
 function Materiales () 
 {
-	largo = document.getElementById("Largo").value;
+    var contrapiso;
+    var cal;
+    var cemento;
+    
+    largo = document.getElementById("Largo").value;
     ancho = document.getElementById("Ancho").value;
     
-    largo = parseInt(largo);
-    ancho = parseInt(ancho);
-    
-    resultado = (largo Math.pow(2));
+    contrapiso = largo * ancho;
 
-    console.log(resultado);
+    cal = contrapiso * 3;
+    cemento = contrapiso * 2;
+
+    console.log("se necesitan " + cal + " bolsas de cal y " + cemento + " bolsas de cemento"  );
 }
