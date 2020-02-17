@@ -2,11 +2,12 @@ function mostrar()
 {
 
 var clave = prompt("ingrese el número clave.");
-    while( clave != "utn750"){
+    while( clave.toLocaleLowerCase() != "utn750"){
         
         console.log("clave incorrecta")
+         clave = prompt("ingrese su clave")
          continue;
-        break;
+
   }
         console.log("Clave correcta")
 }//FIN DE LA FUNCIÓN
