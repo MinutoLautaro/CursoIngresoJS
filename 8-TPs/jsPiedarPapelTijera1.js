@@ -8,13 +8,28 @@ var eleccionMaquina;
 
 function comenzar()
 {
-	
+	var max
+    var min
+    max = 3
+    min = 1
+    
+    eleccionMaquina = Math.round(Math.random () * (max - min) + min)
+    console.log(eleccionMaquina);
 
 
 }//FIN DE LA FUNCIÓN
 function piedra()
 {
-	
+	switch(eleccionMaquina = 1){
+        case 1:
+        alert("empato");
+        break;
+        case 2:
+        alert("perdio");
+        break;
+        case 3:
+        alert("gano");
+    }
 
 }//FIN DE LA FUNCIÓN
 function papel()

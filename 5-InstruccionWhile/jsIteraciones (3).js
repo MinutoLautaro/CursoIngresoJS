@@ -5,7 +5,7 @@ var clave = prompt("ingrese el número clave.");
     while( clave.toLocaleLowerCase() != "utn750"){
         
         console.log("clave incorrecta")
-         clave = prompt("ingrese su clave")
+         clave = prompt("ingrese su clave");
          continue;
 
   }
