@@ -9,11 +9,23 @@ de no ser igual se debe informar si “falta…”  para llegar al número secre
 */
 var numeroSecreto; 
 var contadorIntentos;
+var max;
+var min;
+var numero;
 
+    max = 100;
+    min = 1;
+    contadorIntentos = 0
 function comenzar()
 {
 	//Genero el número RANDOM entre 1 y 100
-	 
+   numeroSecreto = Math.round(Math.random() * (max - min) + min);
+   console.log(numeroSecreto);
+   numero = document.getElementById("numero").value;
+   document.getElementById("intentos").value = contadorIntentos;
+ 
+   
+   
 		//alert(numeroSecreto );
 	
 
@@ -21,6 +33,10 @@ function comenzar()
 
 function verificar()
 {
-	
+  
+  while(numero != numeroSecreto){
+        document.getElementById("intentos").value = contadorIntentos++
+  }
+    alert(" adivinaste en " + contadorIntentos + " intentos");
 	
 }

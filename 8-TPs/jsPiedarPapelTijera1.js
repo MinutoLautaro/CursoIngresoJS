@@ -5,7 +5,6 @@ El jugador seleccionará una imagen correspondiente
 a su opción  y le informaremos si ganó, empató o perdió.
 */
 var eleccionMaquina;
-
 function comenzar()
 {
 	var max
@@ -18,9 +17,12 @@ function comenzar()
 
 
 }//FIN DE LA FUNCIÓN
+
+
+
 function piedra()
 {
-	switch(eleccionMaquina = 1){
+	switch(eleccionMaquina){
         case 1:
         alert("empato");
         break;
@@ -29,16 +31,38 @@ function piedra()
         break;
         case 3:
         alert("gano");
+        break;
     }
-
+    comenzar()
 }//FIN DE LA FUNCIÓN
 function papel()
 {
-
-
+    switch(eleccionMaquina){
+        case 1:
+        alert("gano");
+        break;
+        case 2:
+        alert("empato");
+        break;
+        case 3:
+        alert("perdio");
+        break;   
+    }
+    comenzar()
 }//FIN DE LA FUNCIÓN
 function tijera()
 {
-	
-
+	switch(eleccionMaquina){
+        case 1:
+        alert("perdio");
+        break;
+        case 2:
+        alert("gano");
+        break;
+        case 3:
+    
+        alert("empato");
+        break;
+    }
+    comenzar()   
 }//FIN DE LA FUNCIÓN
