@@ -22,7 +22,7 @@ function comenzar()
    numeroSecreto = Math.round(Math.random() * (max - min) + min);
    console.log(numeroSecreto);
    numero = document.getElementById("numero").value;
-   document.getElementById("intentos").value = contadorIntentos;
+   contadorIntentos++;
  
    
    
@@ -35,7 +35,7 @@ function verificar()
 {
   
   while(numero != numeroSecreto){
-        document.getElementById("intentos").value = contadorIntentos++
+    document.getElementById("intentos").value = contadorIntentos
   }
     alert(" adivinaste en " + contadorIntentos + " intentos");
 	
