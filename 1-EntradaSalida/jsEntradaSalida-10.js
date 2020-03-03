@@ -14,7 +14,7 @@ function mostrarAumento()
     resultado = parseInt(resultado);
     total = parseInt(total);
 
-    resultado = (importe * 25) / 100
+    resultado = (importe * 20) / 100
     total = total - resultado
 
     document.getElementById("resultado").value = total
