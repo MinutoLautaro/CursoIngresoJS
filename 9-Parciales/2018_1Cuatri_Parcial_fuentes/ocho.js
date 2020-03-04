@@ -18,7 +18,7 @@ function mostrar() {
             edad = prompt("Ingrese su edad");
             edad = parseInt(edad);
 
-        } while (edad < 18);
+        } while (isNaN(edad) || edad < 18);
         contador++
         do {
             sexo = prompt("ingrese sexo");
@@ -29,7 +29,10 @@ function mostrar() {
 
         } while (pasaje != "urbano" && pasaje != "nacional" && pasaje != "internacional");
 
-        nombre = prompt("Ingrese su nombre");
+        do {
+            nombre = prompt("Ingrese su nombre");
+        } while (nombre == null || nombre == "");
+
         //Fin toma de datos
         if (contador == 1 && sexo == "m" && pasaje == "nacional") {
             edadJoven = edad;
@@ -56,24 +59,28 @@ function mostrar() {
             contadorMujeres++
             edadMujeres = edadMujeres + edad;
         }
-        //ABC
+        //Fin Calculos
     }
-    
+    //promiedos
+    promedioMujeres = edadMujeres / contadorMujeres
+
+    //Verificacion con alert
     if (edadJoven != 0) {
         alert(nombreJoven + " es el hombre mas joven con pasaje nacional");
-    }
-    else {
+    } else {
         alert("no hay ningun hombre joven con pasaje nacional")
     }
     if (edadVieja != 0) {
         alert("El pasajero mas viejo es " + sexoViejo + " y su pasaje es " + pasajeViejo);
-    }
-    else {
+    } else {
         alert("no se han registrado pasajeros");
     }
     alert("Cant. mujeres con pasajes nacional o urbano" + contadorMujeresUN);
-promedioMujeres =  edadMujeres / contadorMujeres   
-    if (edadMujeres != 0){
+    if (edadMujeres != 0) {
         alert("el promedio de edad de las pasajeras mujeres es " + promedioMujeres);
+    } else {
+        alert("No hay mujeres donde sacar promedio");
     }
 }
+
+// la etiqueta "<br>" da salto de linea en document.write
